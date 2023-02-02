@@ -4,21 +4,6 @@ public class TestRunner {
 	
 	@Karate.Test
 	Karate sampleTest() {
-//		path(s) to features file here. no need to put .feature ending
-		return Karate.run("sample").relativeTo(getClass());
+		return new Karate().path("classpath:runnerTest").relativeTo(getClass());
 	}
-	@Karate.Test
-	Karate getAPITest() {
-//		path(s) to features file here. no need to put .feature ending
-		return Karate.run("getapi").relativeTo(getClass());
-	}
-	
-	@Karate.Test
-	Karate deleteAPITest() {
-		return Karate.run("createAndDeleteUser").relativeTo(getClass());
-	}
-
-	
-	
-	
 }
