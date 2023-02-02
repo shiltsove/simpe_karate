@@ -20,4 +20,4 @@
 Feature: Reading argument from Jenkins
   
   Scenario: Just get the argument
-    * print guardian
+    * print karate.properties("guardian")
