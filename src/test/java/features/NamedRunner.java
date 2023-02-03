@@ -5,7 +5,7 @@ public class NamedRunner {
 	@Karate.Test
 	Karate sampleTest() {
 //		path(s) to features file here. no need to put .feature ending
-		return Karate.run("classpath:runnerTest/sample").relativeTo(getClass());
+		return Karate.run("conditional").relativeTo(getClass());
 	}
 //	@Karate.Test
 //	Karate getAPITest() {
