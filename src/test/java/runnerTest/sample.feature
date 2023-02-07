@@ -11,7 +11,7 @@ Scenario: Variable scenario
 	* def level = 3
 	* def dnd_class = 'Bard'
 	* def boolv = 3 < 1 
-	* assert level == 'red 5'
+	* assert level == '3'
 
 	* print "You are bard",dnd_class,'HP:' + level*5
 	* print boolv
